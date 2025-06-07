@@ -110,7 +110,7 @@ jobs:
       run: helm template todoapp ./todoapp -f ./todoapp/values.yaml
 
     - name: Package Helm
-      run: helm package /todoapp
+      run: helm package ./todoapp
 
     - name: Upload Helm Artifact
       uses: actions/upload-artifact@v4
